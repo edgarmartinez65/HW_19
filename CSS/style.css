@@ -1,23 +1,31 @@
 body {
     margin: 0;
     padding: 0;
-    /* background-color: black; */
+    background-color: black;
 }
 *{
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-nav {
-    /* background-color: purple; */
-    width: 100vw;
-    /* overflow: auto; */
-    text-align: right;
-}
-header {
-    width: 100%;
-    height: 100%;
 
+.topBar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1000;
+}
+.topBar nav {
+    display: block;
+}
+.topBar nav a {
+    color: white;
+    margin: 0px 20px;
+    text-decoration: none;
+}
+.topBar i {
+    display: none;
 }
 footer {
     width: 100%;
@@ -48,19 +56,7 @@ li {
 }
 li2 {
     display: inline-block;
-    padding: 15px 30px;
-}
-.logo {
-    position: absolute;
-    margin-top: 3px;
-    padding: 15px;
-    /* background-color: saddlebrown; */
-}
-ul {
-    width: 50%;
-    margin-left: auto;
-    display: inline-block;
-    vertical-align: top;
+    padding: 15px 30px; */
 }
 .heroImg {
     height: 600px;
@@ -108,7 +104,6 @@ button:hover {
         display: none;
     }
 }
-
 .flexContainer{
     margin: 0 auto;
     /* margin-right: auto;
@@ -261,14 +256,61 @@ button:hover {
 .aboutMe {
     background-color: black;
     height: 65vh;
+    
 }
-/* .projectImg {
-    width: 5vw;
-    height: 5vw;
-} */
 .viewProject {
     display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10vh;
 }
+@media only screen and (max-width: 650px) {
+
+    .topBar nav{
+        display: none;
+        
+    }
+    .topBar i{
+        display: flex;
+        color: white;
+    }
+
+}
+/* Original code */
+/* nav {
+    display: flex;
+    position: relative;
+    display: block;
+    background-color: purple;
+    width: 100vw;
+    overflow: auto;
+    text-align: right;
+} */
+/* header {
+    background-color: cadetblue;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    color: white;
+    height: 100vh;
+    min-height: 350px;
+    position: relative;
+
+} */
+/* .projectImg {
+    width: 5vw;
+    height: 5vw;
+} */
+/* .logo {
+    position: absolute;
+    margin-top: 3px;
+    padding: 15px;
+    background-color: saddlebrown;
+} */
+/* ul {
+    width: 50%;
+    margin-left: auto;
+    display: inline-block;
+    vertical-align: top;
+} */
