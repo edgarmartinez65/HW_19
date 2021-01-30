@@ -255,7 +255,7 @@ button:hover {
 }
 .aboutMe {
     background-color: black;
-    height: 65vh;
+    /* height: 65vh; */
     
 }
 .viewProject {
@@ -314,3 +314,9 @@ button:hover {
     display: inline-block;
     vertical-align: top;
 } */
+.resume {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+}
