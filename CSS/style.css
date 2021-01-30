@@ -302,12 +302,12 @@ button:hover {
     position: relative;
 
 } */
-/* .projectImg {
-    width: 5vw;
+.projectImg {
+    /* width: 5vw;
     height: 5vw;
     min-width: 30vw;
-    max-height: 30vh;
-} */
+    max-height: 30vh; */
+}
 /* .logo {
     position: absolute;
     margin-top: 3px;
@@ -325,4 +325,9 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2vh;
+}
+.projectPhoto {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }
