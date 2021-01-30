@@ -248,6 +248,16 @@ button:hover {
         "container3"
         "container6"
     }
+    .projectPhoto {
+        width: 100%;
+        width: 400px;
+        max-height: auto;
+    }
+    .projectPhoto1 {
+        width: 100%;
+        max-width: auto;
+        max-height: 200px;
+    }
 }
 .mySkills {
     background: white;
