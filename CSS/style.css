@@ -58,10 +58,10 @@ li2 {
     display: inline-block;
     padding: 15px 30px; */
 }
-.heroImg {
+/* .heroImg {
     height: 600px;
     padding: 25px;
-}
+} */
 .content {
     width: 500px;
     margin: 0 auto;
@@ -105,8 +105,6 @@ button:hover {
     }
 }
 .flexContainer{
-    margin: 0 auto;
-    max-width: 80vw;
     display: grid;
     grid-gap: 2vw;
     grid-template-columns: 1fr 1fr 1fr;
@@ -116,11 +114,13 @@ button:hover {
     margin-left: auto; */
      /* margin-right: auto;
     margin-left: auto; */
+    /* margin: 0 auto; */
+    /* max-width: 80vw; */
 }
 .skillDes {
+    padding: 10px;
     /* margin-right: 5vw;
     margin-left: 5vw; */
-    padding: 10px;
     /* margin: 10px; */
     /* background-color: red; */
 }
@@ -295,54 +295,64 @@ button:hover {
     }
 
 }
-/* Original code */
-/* nav {
+.buttons {
     display: flex;
-    position: relative;
-    display: block;
-    background-color: purple;
-    width: 100vw;
-    overflow: auto;
-    text-align: right;
-} */
-/* header {
-    background-color: cadetblue;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    display: flex;
-    color: white;
-    height: 100vh;
-    min-height: 350px;
-    position: relative;
-
-} */
-.projectImg {
-    /* width: 5vw;
-    height: 5vw;
-    min-width: 30vw;
-    max-height: 30vh; */
-}
-/* .logo {
-    position: absolute;
-    margin-top: 3px;
-    padding: 15px;
-    background-color: saddlebrown;
-} */
-/* ul {
-    width: 50%;
-    margin-left: auto;
-    display: inline-block;
-    vertical-align: top;
-} */
-.resume {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2vh;
+    justify-content: space-evenly;
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding-bottom: 15px;
 }
 .projectPhoto {
     width: 100%;
     max-width: 400px;
     height: auto;
+}
+
+.bg-modal {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 17px;
+    position: absolute;
+    
+    
+}
+h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-top: 28px;
+    padding-bottom: 14px;
+}
+p2 {
+    font-size: 15px;
+    padding-bottom: 14px;
+}
+input {
+    width: 70%;
+    display: block;
+    margin: 14px auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 14px;
+}
+.close {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 42px;
+    transform: rotate(45deg);
+    cursor: pointer;
 }
